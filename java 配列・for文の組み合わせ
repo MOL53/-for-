@@ -1,0 +1,40 @@
+//import javax.naming.spi.DirStateFactory.Result;
+//import java.io.BufferedReader;
+//import java.io.InputStreamReader;
+//import java.nio.Buffer;
+
+public class createprog {
+    public static void main(String[] args) throws Exception {
+        // プログラムの説明
+        System.out.println
+        ("入力された数値の和が100を超えたら、または10回入力されたらプログラムを終了します");
+
+        // 配列・宣言の宣言
+        int[] number = new int[10];
+
+        // sumは入力された数値を足していくための変数
+        int sum;
+
+        // countは10回入力したらプログラムを終了するためのカウント
+        int count;
+
+        // 繰り返し
+        
+        --------質問1: 以下のfor文では何をやっているのか？
+        --------質問2: for文には複数の条件式を扱うことができるのか？
+        --------質問3: 上記変数の意味は理解しているが、for文でどのような動いているのか？
+        
+        for (sum = 0, count = 0; count < 10 && sum <= 100; count++ ) {
+            // 配列にcountを入れ、10回まで入力させる
+            number[count] = new java.util.Scanner(System.in).nextInt();
+            
+            // sumに加算
+            // 配列に入っている値をを加算する
+            sum += number[count];
+
+        } // for文ここまで
+        
+        for (int i = 0; i < count; i++) System.out.println(number[i]);
+        
+    }
+}
